@@ -1,0 +1,418 @@
+
+
+/* ===============================
+   TOBACCO SECTION
+================================ */
+.mavuno-tobacco-section {
+  width: 100%;
+  padding: 120px 0;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* ===============================
+   CARD (KEY FIX HERE)
+================================ */
+.mavuno-tobacco-card {
+  display: flex;
+  align-items: stretch; /* IMPORTANT */
+  width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+  /* box-shadow: 0 30px 70px rgba(0,0,0,0.15); */
+}
+
+
+/* LEFT CONTENT */
+.tobacco-content {
+  flex: 1;
+  padding: 60px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* RIGHT IMAGE CONTAINER */
+.tobacco-image {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: #f9faf9;
+  overflow: hidden;
+}
+
+
+/* ===============================
+   IMAGE FIX (NO OVERFLOW / NO CROPPING ISSUES)
+================================ */
+.tobacco-image img {
+  width: 100%;
+  max-width: 480px;
+  height: auto; /* KEY FIX */
+  object-fit: contain; /* safe display */
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+
+/* hover */
+.tobacco-image:hover img {
+  transform: scale(1.03);
+}
+
+/* ===============================
+   TEXT (UNCHANGED STYLE CLEANED)
+================================ */
+.section-header h2 {
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.sub-head {
+  font-size: 20px;
+  font-weight: 500;
+  color: #555;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  font-size: 17px;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.tobacco-overview h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.overview-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.overview-list li {
+  font-size: 17px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #333;
+}
+
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 992px) {
+
+  .mavuno-tobacco-card {
+    flex-direction: column;
+  }
+
+  .tobacco-content {
+    padding: 50px 30px;
+    text-align: center;
+  }
+
+  .tobacco-image {
+    padding: 30px;
+  }
+
+  .tobacco-image img {
+    max-width: 320px;
+  }
+
+  .overview-list li {
+    justify-content: center;
+  }
+}
+
+.leaf-fertilizer-section {
+  width: 100%;
+  padding: 120px 60px;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg,#f9f9f9,#eef1f3);
+  color: #333;
+}
+
+.leaf-fertilizer-content {
+  display: flex;
+  gap: 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* LEFT COLUMN */
+.leaf-left {
+  flex: 1 1 500px;
+}
+
+.leaf-left h2 {
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--primary-color);
+  margin-bottom: 12px;
+}
+
+.sub-head {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  color: #444;
+}
+
+.leaf-left h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefits-list li {
+  font-size: 16px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: all 0.3s;
+}
+
+.benefits-list li i {
+  color: var(--primary-color);
+  font-size: 20px;
+  min-width: 24px;
+  text-align: center;
+}
+
+/* RIGHT COLUMN */
+.leaf-right {
+  flex: 1 1 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.leaf-right h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--primary-color);
+}
+
+.leaf-right p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.theme-btn {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 16px 40px;
+  border-radius: 4px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.35s;
+}
+
+.theme-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(47,79,79,0.3);
+  color: var(--primary-color);
+}
+
+.theme-btn-s2 {
+  background: #fff;
+  border: 2px solid var(--primary-color);
+  color: var(--secondary-dark);
+  padding: 16px 40px;
+  border-radius: 4px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.theme-btn-s2:hover {
+  background: var(--primary-color);
+  color: #fff;
+  transform: translateY(-4px);
+}
+
+/* Responsive */
+@media (max-width:992px){
+  .leaf-fertilizer-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .leaf-left, .leaf-right {
+    flex: 1 1 100%;
+  }
+  .btn-group { justify-content: center; }
+}
+
+/* Full-width premium card */
+.why-choose-section {
+  width: 100%;
+  padding: 100px 0;
+  font-family: 'Inter', sans-serif;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-choose-card {
+  width: 100%;
+  /* background: rgba(47,79,79,0.05); */
+  padding: 40px 40px;
+  text-align: center;
+  border-radius: 0px;
+  /* box-shadow: 0 25px 60px rgba(0,0,0,0.1); */
+  backdrop-filter: blur(8px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.why-choose-card:hover {
+  transform: translateY(-6px);
+  /* box-shadow: 0 35px 80px rgba(0,0,0,0.15); */
+}
+
+.why-choose-card h2 {
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--primary-color);
+  margin-bottom: 50px;
+}
+
+.why-choose-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 50px auto;
+  display: inline-block;
+  text-align: left;
+}
+
+.why-choose-list li {
+  font-size: 18px;
+  line-height: 2;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #444;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.why-choose-list li i {
+  color: var(--primary-color);
+  font-size: 22px;
+  min-width: 28px;
+  transition: transform 0.3s;
+}
+
+.why-choose-list li:hover {
+  color: var(--secondary-dark);
+  transform: translateX(6px);
+}
+
+.why-choose-list li:hover i {
+  transform: scale(1.2);
+}
+
+/* CTA Buttons */
+.why-choose-btns {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.cta-btn-primary {
+  background: var(--primary-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 18px 50px;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.cta-btn-primary:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(47,79,79,0.3);
+  color: #fff;
+}
+
+.cta-btn-secondary {
+  background: #fff;
+  border: 2px solid #2F4F4F;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 16px;
+  padding: 18px 50px;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.cta-btn-secondary:hover {
+  background: var(--primary-color);
+  color: #fff;
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(47,79,79,0.25);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .why-choose-card {
+    padding: 60px 20px;
+  }
+  .why-choose-card h2 {
+    font-size: 36px;
+  }
+  .why-choose-list li {
+    font-size: 16px;
+  }
+  .cta-btn-primary, .cta-btn-secondary {
+    padding: 16px 40px;
+    font-size: 15px;
+  }
+}

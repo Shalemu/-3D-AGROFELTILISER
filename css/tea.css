@@ -1,0 +1,327 @@
+:root {
+    --primary-color: #105f32;
+    --secondary-color: #1c1c1c;
+    --topbar-bg: #76ad33;
+    --topbar-text: #ffffff;
+    --dark-color: #111;
+    --light-color: #fff;
+    --navbar-bg: #ffffff;
+    --dropdown-bg: #ffffff;
+    --primary:#8dc73f;
+    --primary-dark:#76ad33;
+    --icon-bg:#f1f8e9;
+--secondary-color:#f5f7fb;
+--text-dark:#051829;
+--text-light:#6c757d;
+--white:#ffffff;
+ --navbar-sticky-bg: #ffffff;
+ --navbar-sticky-shadow: 0 10px 30px rgba(0,0,0,0.06);
+
+
+}
+
+/* ===============================
+   PREMIUM OVERVIEW SECTION
+   =============================== */
+.overview-section {
+    padding: 120px 0;
+    background: #f9fbfd;
+    font-family: 'Inter', sans-serif;
+    margin-top: -100px;
+}
+
+.container-xl {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Card wrapper */
+.overview-card {
+    display: flex;
+    flex-wrap: wrap;
+    /* border-radius: 24px; */
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.08);
+}
+
+/* ===== Left Content ===== */
+.overview-content {
+    flex: 1 1 55%;
+    padding: 70px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-header h2 {
+    font-size: 44px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: #1a1a1a;
+}
+
+.section-header .sub-head {
+    font-size: 16px;
+    color: #5f6b7a;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Model overview text */
+.overview-text h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #105f32;
+    margin-bottom: 15px;
+}
+
+.overview-text p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #5f6b7a;
+    margin-bottom: 18px;
+}
+
+/* Bullet list with icons */
+.overview-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 25px;
+}
+
+.overview-list li {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #374151;
+}
+
+.overview-list li i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #105f32;
+    font-size: 18px;
+}
+
+/* Closing statement */
+.closing-text {
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.btn-group a {
+    display: inline-block;
+    margin-right: 12px;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.theme-btn.read-more {
+    background-color: #105f32;
+    color: #fff;
+}
+.theme-btn.read-more:hover {
+    background-color: #0e4d29;
+}
+
+.theme-btn-s2.read-more {
+    background-color: #f0f4ff;
+    color: #105f32;
+}
+.theme-btn-s2.read-more:hover {
+    background-color: #dbe5ff;
+}
+
+/* ===== Right Image ===== */
+.overview-image {
+    flex: 1 1 45%;
+    min-height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.overview-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+.overview-image img:hover {
+    transform: scale(1.05);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 991px) {
+    .overview-card {
+        flex-direction: column;
+    }
+    .overview-content {
+        padding: 50px 40px;
+        text-align: center;
+    }
+    .overview-image {
+        min-height: 320px;
+    }
+}
+
+@media (max-width: 575px) {
+    .overview-content {
+        padding: 30px 25px;
+    }
+    .section-header h2 {
+        font-size: 28px;
+    }
+    .overview-text h4 {
+        font-size: 16px;
+    }
+    .overview-text p, .overview-list li {
+        font-size: 14px;
+    }
+    .overview-image {
+        min-height: 240px;
+    }
+}
+
+/* ===============================
+   BENEFITS SECTION (AFTER OVERVIEW)
+   =============================== */
+.benefits-section {
+    padding: 100px 0;
+    background: #f8f9fb;
+    font-family: 'Inter', sans-serif;
+}
+
+.benefits-card {
+    display: flex;
+    flex-wrap: wrap;
+    /* background: #ffffff; */
+    /* box-shadow: 0 25px 60px rgba(0,0,0,0.08); */
+    border-radius: 1px;
+    overflow: hidden;
+}
+
+.benefits-image {
+    flex: 1 1 45%;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.benefits-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+.benefits-image img:hover {
+    transform: scale(1.05);
+}
+
+.benefits-content {
+    flex: 1 1 55%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.benefits-content h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.benefits-content .sub-head {
+    font-size: 16px;
+    color: #5f6b7a;
+    margin-bottom: 30px;
+}
+
+.benefits-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 25px;
+}
+
+.benefits-list li {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #374151;
+}
+
+.benefits-list li i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+.btn-group a {
+    display: inline-block;
+    margin-right: 12px;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.theme-btn.read-more {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.theme-btn.read-more:hover {
+    background-color: var(--primary-dark);
+}
+
+.theme-btn-s2.read-more {
+    background-color: #f0f4ff;
+    color: var(--primary-color);
+}
+.theme-btn-s2.read-more:hover {
+    background-color: #dbe5ff;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .benefits-card {
+        flex-direction: column-reverse;
+    }
+    .benefits-content {
+        padding: 50px 40px;
+        text-align: center;
+    }
+    .benefits-image {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 575px) {
+    .benefits-content {
+        padding: 30px 25px;
+    }
+    .benefits-content h2 {
+        font-size: 28px;
+    }
+    .benefits-content h4 {
+        font-size: 16px;
+    }
+    .benefits-content p, .benefits-list li {
+        font-size: 14px;
+    }
+    .benefits-image {
+        min-height: 240px;
+    }
+}
